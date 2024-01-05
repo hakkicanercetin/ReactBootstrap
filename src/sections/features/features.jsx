@@ -38,52 +38,24 @@ export function Features()
       description : "With Bootstrap 5, we've created a fresh new layout for this template!",
       icon : "bi-patch-check"
     };
+    const cards = [card1,card2,card3,card4,card5,card6];
     return (
         <section>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-xxl-4 mb-5">
+                    
+                        {cards.map((card,index)=>
+                        (
+                          <div key={index} className="col-lg-6 col-xxl-4 mb-5">
                         <Card
-                        title = {card1.title}
-                        description = {card1.description}
-                        icon = {card1.icon}
-                        ></Card>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <Card
-                        title = {card2.title}
-                        description = {card2.description}
-                        icon = {card2.icon}
-                        ></Card>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <Card
-                        title = {card3.title}
-                        description = {card3.description}
-                        icon = {card3.icon}
-                        ></Card>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <Card
-                        title = {card4.title}
-                        description = {card4.description}
-                        icon = {card4.icon}
-                        ></Card>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <Card
-                        title = {card5.title}
-                        description = {card5.description}
-                        icon = {card5.icon}
-                        ></Card>
-                    </div>
-                    <div className="col-lg-6 col-xxl-4 mb-5">
-                        <Card
-                        title = {card6.title}
-                        description = {card6.description}
-                        icon = {card6.icon}
-                        ></Card>
-                    </div>
+                          key = {index}
+                          title = {card.title}
+                          description = {card.description}
+                          icon = {card.icon}
+                          ></Card>
+                          </div>
+                        ))};
+                    
                 </div>
             </div>
         </section>
