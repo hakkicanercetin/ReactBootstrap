@@ -1,5 +1,4 @@
 import  "../node_modules/bootstrap/scss/bootstrap.scss";
-import "../node_modules/bootstrap-icons/icons/alarm.svg";
 import { HeroDiv } from "./sections/hero/Hero";
 import { Navbar } from "./sections/navbar/Navbar";
 import { Footer } from "./sections/footer/Footer";
